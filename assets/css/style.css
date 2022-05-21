@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+header nav {
+  background-image: linear-gradient(90deg, #fff, #8bfbf9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 80px;
+}
+
+nav a {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.tabela {
+  width: 75%;
+}
+
+.form {
+  width: 75%;
+  margin: 30px auto 0;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+.button > input,
+button {
+  background-color: #d8fefd;
+  padding: 5px 16px;
+  border-radius: 8%;
+  border: none;
+}
+
+@media (max-width: 760px) {
+  .form {
+    width: 100%;
+  }
+}
