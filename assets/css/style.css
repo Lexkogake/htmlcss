@@ -31,6 +31,13 @@ nav a {
   margin: 30px auto 0;
 }
 
+.xpsim {
+  color: green;
+}
+.xpnao {
+  color: red;
+}
+
 .button {
   display: flex;
   justify-content: flex-end;
