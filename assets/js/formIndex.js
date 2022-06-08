@@ -1,6 +1,5 @@
-const telefone = document.querySelector('#telefone');
 let people;
-function teste(e) {
+function mod(e) {
   e.preventDefault();
   let peopleRaw = localStorage.getItem('people');
   if (peopleRaw != null) {
@@ -10,7 +9,7 @@ function teste(e) {
   }
 
   if (e.target.elements['telefone'].value.length < 15) {
-    alert('Quantidade de caracteres inválido');
+    alert('Telefone, quantidade de caracteres inválido');
     return false;
   }
 
@@ -52,16 +51,6 @@ if (id !== null) {
   }
 }
 
-function testNumberTel(el) {
-  el.preventDefault();
-  // if (/[0-9]/g.test(el.key && el.target.value < 15)) {
-  //   el.target.value += el.key;
-  // }
-  if (el.target.value < 15) {
-    // alert('oi');
-  }
-}
-
 const mask = {
   phone(value) {
     return value
@@ -72,10 +61,11 @@ const mask = {
   }
 };
 
+const telefone = document.querySelector('#telefone');
 telefone.addEventListener(
   'input',
-  e => {
-    e.target.value = mask.phone(e.target.value);
+  element => {
+    element.target.value = mask.phone(element.target.value);
   },
   false
 );

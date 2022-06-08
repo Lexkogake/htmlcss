@@ -29,7 +29,7 @@
       </nav>
     </header>
       <main>
-        <form class="form" onsubmit="teste(event)">
+        <form class="form" onsubmit="mod(event)">
           <fieldset>
             <legend>Formulário</legend>
             <div class="form-floating mb-3">
@@ -38,6 +38,7 @@
                 class="form-control"
                 id="name"
                 placeholder="Nome"
+                minlength="3"
                 required
               />
               <label for="name">Nome</label>
@@ -45,12 +46,12 @@
 
             <div class="form-floating mb-3">
               <input
-                type="text"
-                class="form-control cel-sp-mask"
-                 min="15"
-                 
+                type="tel"
+                class="form-control"
                 id="telefone"
                 placeholder="Telefone"
+                minlength="15"
+                
                 required
                 />
               <label for="telefone">Telefone</label>
@@ -59,21 +60,20 @@
             <label class="label-xp">
               Experiência prévia: 
             </label>
-            <input class="form-check-input" type="radio" name="xp" id="xp-yes" value="true" >
+            <input class="form-check-input" type="radio" name="xp" id="xp-yes" required value="true" >
             <label for="xp-yes">Sim</label>
-            <input class="form-check-input" type="radio" name="xp" id="xp-no"  value="false">
+            <input class="form-check-input" type="radio" name="xp" id="xp-no"  required value="false">
             <label for="xp-no">Não</label>
             </div>
 
           </fieldset>
-          <div class="button">
-            <input type="submit" value="Salvar">
+          <div class="div__button">
+            <input class="button" type="submit" value="Salvar">
           </div>
  
         </form>
       </main>
    
-    
     <script src="assets/js/formIndex.js"></script>
   </body>
 </html>
