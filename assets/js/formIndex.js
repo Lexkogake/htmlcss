@@ -30,7 +30,8 @@ function mod(e) {
   localStorage.setItem('people', JSON.stringify(people));
   console.log(people);
 
-  window.location.href = '/index.html';
+  // window.location.href = '/index.html';
+  window.location.href = 'htmlcss/index.html';
 }
 
 let urlPrincipal = new URL(window.location.href);
